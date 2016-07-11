@@ -3,7 +3,7 @@
 pkgname=hugo
 pkgver=0.16
 pkgrel=1
-pkgdesc="Fast and Flexible Static Site Generator in Go"
+pkgdesc="Fast and Flexible Static Site Generator in Go — build from source."
 arch=('i686' 'x86_64')
 url="http://hugo.spf13.com/"
 conflicts=('hugo')
@@ -26,8 +26,8 @@ build() {
   mkdir -p "$GOPATH/src/github.com/spf13"
   ln -s `pwd` "$GOPATH/src/github.com/spf13/hugo"
 
-  go get -d -v github.com/spf13/hugo
-  go build
+  go get -d -v .
+  make no-git-info
 }
 
 package() {
