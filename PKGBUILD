@@ -1,7 +1,7 @@
 # Maintainer
 
 pkgname=hugo
-pkgver=0.16
+pkgver=0.17
 pkgrel=1
 pkgdesc="Fast and Flexible Static Site Generator in Go — build from source."
 arch=('i686' 'x86_64')
