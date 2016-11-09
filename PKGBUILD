@@ -9,7 +9,7 @@ url="http://hugo.spf13.com/"
 conflicts=('hugo')
 license=('Apache')
 depends=('glibc')
-makedepends=('go' 'git' 'mercurial')
+makedepends=('go' 'git')
 source=("git+https://github.com/spf13/hugo.git#tag=v${pkgver}")
 sha512sums=('SKIP')
 
